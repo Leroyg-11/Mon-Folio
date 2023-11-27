@@ -8,14 +8,6 @@ import About from "./pages/About.jsx";
 import Error from "./pages/Error.jsx";
 
 const App = () => {
-  const ErrorCustom = () => {
-    return (
-      <div>
-        <h1>Erreur personnalisée</h1>
-        <p>L'URL que vous avez saisie est incorrecte.</p>
-      </div>
-    );
-  };
   return (
     <BrowserRouter>
       <Routes>
