@@ -14,7 +14,7 @@ const Home = () => {
         windowSize <= 768 ? "mobile" : ""
       }`}
     >
-      <h1 className="title"> Bienvenue ! </h1>
+      <h1 className="title"> Bienvenueee ! </h1>
 
       <section className="home-section">
         <div className="home-left-side">
