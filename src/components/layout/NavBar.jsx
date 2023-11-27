@@ -27,21 +27,21 @@ const NavBar = () => {
         </li>
 
         <li>
-          <Link className="nav-link-item" to="/Guillaume-Leroy-Folio/about">
+          <Link className="nav-link-item" to="/Mon-Folio/about">
             <button type="button" className="nes-btn is-primary">
               About
             </button>
           </Link>
         </li>
         <li>
-          <Link className="nav-link-item" to="/Guillaume-Leroy-Folio/projet">
+          <Link className="nav-link-item" to="/Mon-Folio/projet">
             <button type="button" className="nes-btn is-primary">
               Projets
             </button>
           </Link>
         </li>
         <li>
-          <Link className="nav-link-item" to="/Guillaume-Leroy-Folio/contact">
+          <Link className="nav-link-item" to="/Mon-Folio/contact">
             <button type="button" className="nes-btn is-primary">
               Contact
             </button>
