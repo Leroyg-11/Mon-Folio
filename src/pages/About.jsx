@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import useWindowSize from "../CustomHook";
+import "./SCSS/About.scss";
 
 const About = () => {
   const windowSize = useWindowSize();
