@@ -10,7 +10,7 @@ const NavBar = () => {
     <nav className={`nav ${windowSize <= 768 ? "mobile" : ""}`}>
       <ul>
         <li>
-          <Link className="nav-link-item" to="/Guillaume-Leroy-Folio/">
+          <Link className="nav-link-item" to="/Mon-Folio/">
             <button type="button" className="nes-btn is-warning">
               Guillaume Leroy
             </button>
@@ -19,7 +19,7 @@ const NavBar = () => {
       </ul>
       <ul className="item-nav">
         <li>
-          <Link className="nav-link-item" to="/Guillaume-Leroy-Folio/">
+          <Link className="nav-link-item" to="/Mon-Folio/">
             <button type="button" className="nes-btn is-primary">
               Home
             </button>
