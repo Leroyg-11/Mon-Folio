@@ -44,7 +44,7 @@ const Contact = () => {
       }`}
     >
       {" "}
-      <h1 className="title"> CONTACTEZ MOI</h1>
+      <h1 className="title">Contactez moi</h1>
       <div className="form-container">
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Nom</label>
@@ -65,7 +65,7 @@ const Contact = () => {
             id="email"
           />
 
-          <label htmlFor="phone">Telephone</label>
+          <label htmlFor="phone">Téléphone</label>
           <input
             required
             className="nes-input is-dark"

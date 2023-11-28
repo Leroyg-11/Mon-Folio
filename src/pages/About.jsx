@@ -35,7 +35,7 @@ const About = () => {
         windowSize <= 768 ? "mobile" : ""
       }`}
     >
-      <h1 className="title">A propos</h1>
+      <h1 className="title">À propos</h1>
 
       <section className="about-container">
         <ul className="item-about-container">
