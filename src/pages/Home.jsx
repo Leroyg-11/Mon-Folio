@@ -43,12 +43,12 @@ const Home = () => {
             />
           </div>
           <div className="btn-home-container">
-            <Link className="home-btn" to="/nesAlias/about">
+            <Link className="home-btn" to="/Mon-Folio/about">
               <button type="button" className="nes-btn ">
                 En savoir plus
               </button>
             </Link>
-            <Link className="home-btn" to="/nesAlias/contact">
+            <Link className="home-btn" to="/Mon-Folio/contact">
               <button type="button" className="nes-btn ">
                 Me contacter{" "}
               </button>
