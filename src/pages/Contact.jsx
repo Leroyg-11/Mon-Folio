@@ -74,7 +74,7 @@ const Contact = () => {
             id="phone"
           />
 
-          <label htmlFor="message">message</label>
+          <label htmlFor="message">Message</label>
           <textarea
             required
             className="nes-input is-dark"
