@@ -82,7 +82,9 @@ const Contact = () => {
             type="text"
             id="message"
           />
-          <button type="submit">Envoyer</button>
+          <button type="submit" className="nes-btn">
+            Envoyer
+          </button>
         </form>
       </div>
       <PopupContact isOpen={showPopup} onClose={closePopup} />
