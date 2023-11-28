@@ -14,7 +14,6 @@ const CarouselFlipp = (repo) => {
     axios
       .get("https://api.github.com/users/Leroyg-11/repos")
       .then((res) => {
-        // console.log(res.data);
         setRepos(res.data);
       })
       .catch((error) => console.error(error));
@@ -25,6 +24,7 @@ const CarouselFlipp = (repo) => {
   }, []);
 
   const reposWithOneStar = repos.filter((repo) => repo.stargazers_count === 1);
+  console.log(reposWithOneStar);
 
   return (
     <div>
@@ -88,9 +88,6 @@ const CarouselFlipp = (repo) => {
             >
               {reposWithOneStar.map((repo) => {
                 const logoUrl = `https://raw.githubusercontent.com/Leroyg-11/${repo.name}/main/Logo.png`;
-                const slideOne = `https://raw.githubusercontent.com/Leroyg-11/${repo.name}/main/Slide/slide-1.jpeg`;
-                const slideTwo = `https://raw.githubusercontent.com/Leroyg-11/${repo.name}/main/Slide/slide-2.jpeg`;
-                const slideThree = `https://raw.githubusercontent.com/Leroyg-11/${repo.name}/main/Slide/slide-3.jpeg`;
 
                 return (
                   <div className="not-active" key={repo.id}>
@@ -101,9 +98,6 @@ const CarouselFlipp = (repo) => {
                       topics={repo.topics}
                       language={repo.language}
                       logoUrl={logoUrl}
-                      slideOne={slideOne}
-                      slideTwo={slideTwo}
-                      slideThree={slideThree}
                     />
                   </div>
                 );

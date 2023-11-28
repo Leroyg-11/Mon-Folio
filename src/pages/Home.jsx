@@ -23,7 +23,6 @@ const Home = () => {
             <TypeAnimation
               className="type-animation"
               sequence={[
-                // Same substring at the start will only be typed out once, initially
                 "Bonjour, je m'appelle ",
                 1000,
 
