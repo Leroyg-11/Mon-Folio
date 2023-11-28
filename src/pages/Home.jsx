@@ -54,6 +54,15 @@ const Home = () => {
               </button>
             </Link>
           </div>
+
+          <div className="home-social-network">
+            <Link to="https://www.linkedin.com/in/guillaume-leroy-6b724b2a2/">
+              <i class="nes-icon linkedin is-large"></i>
+            </Link>
+            <Link to="https://github.com/Leroyg-11">
+              <i class="nes-icon github is-large"></i>
+            </Link>
+          </div>
         </div>
 
         <div className="home-right-side">
