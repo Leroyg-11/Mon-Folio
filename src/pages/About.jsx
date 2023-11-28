@@ -4,6 +4,7 @@ import "./SCSS/About.scss";
 
 const About = () => {
   const windowSize = useWindowSize();
+
   const [sectionToDisplay, setSectionToDisplay] = useState("parcours");
   useEffect(() => {
     // Ajouter la classe "is-success" au bouton correspondant à la section par défaut
@@ -129,8 +130,14 @@ const About = () => {
         )}
         {sectionToDisplay === "appétence" && (
           <article className="about-appetence-container about-article">
-            {/* Contenu pour la section "appétence" */}
-            Les sujets et languages ue j'aimerais appréhender
+            Je suis animé par le désir d'appliquer mes connaissances dans un
+            environnement professionnel dynamique. Travailler au sein d'une
+            équipe expérimentée en tant que développeur débutant représente pour
+            moi l'opportunité idéale d'acquérir une expérience concrète, de
+            perfectionner mes compétences et de m'immerger dans le monde
+            passionnant du développement web. J'aimerais exploré d'autre
+            framwork tel que Vue.js ou Angular. je suis motivé dynamique et
+            envieux d'apprendre, alors .. contactez moi !
           </article>
         )}
       </section>

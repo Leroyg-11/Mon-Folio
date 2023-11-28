@@ -1,0 +1,42 @@
+.flip {
+  margin-top: 3rem;
+}
+.react-multiple-carousel__arrow--left {
+  bottom: 3%;
+}
+.react-multiple-carousel__arrow--right {
+  bottom: 3%;
+}
+
+.react-multi-carousel-item {
+  transform-style: preserve-3d;
+  display: flex !important;
+  backface-visibility: hidden;
+  justify-content: center !important;
+  z-index: -1 !important;
+  transform: scale(0.8);
+  opacity: 0.2 !important;
+  pointer-events: none !important;
+}
+
+.react-multi-carousel-item--active {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  display: flex !important;
+  justify-content: center !important;
+  z-index: 1 !important;
+  transform: scale(0.98);
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  visibility: visible;
+  animation: swipe 0.5s forwards !important;
+}
+
+@keyframes swipe {
+  0% {
+    transform: rotatey(0deg);
+  }
+  100% {
+    transform: rotatey(10deg);
+  }
+}

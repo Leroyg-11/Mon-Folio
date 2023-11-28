@@ -1,0 +1,40 @@
+main {
+  h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .projet-container {
+    margin-top: 3rem;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .carousel-flipp {
+    display: none;
+  }
+
+  &.mobile {
+    .projet-container {
+      display: none;
+    }
+    .carousel-flipp {
+      display: block;
+      width: 100%;
+    }
+    .front-content,
+    .back-content {
+      width: 85%;
+      margin: auto;
+    }
+  }
+}
+
+@keyframes swipe {
+  0% {
+    transform: rotatey(0deg);
+  }
+  100% {
+    transform: rotatey(360deg);
+  }
+}
