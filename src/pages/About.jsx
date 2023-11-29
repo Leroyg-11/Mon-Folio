@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import useWindowSize from "../CustomHook";
 import "./SCSS/About.scss";
 
+import { FaHtml5 } from "react-icons/fa";
+import { FaSass } from "react-icons/fa";
+
 const About = () => {
   const windowSize = useWindowSize();
 
@@ -117,13 +120,23 @@ const About = () => {
                   </div>
                 </li>
                 <li>
-                  <p>HTML</p>
+                  <div>
+                    <i>
+                      <FaHtml5 />{" "}
+                    </i>
+                    <p>HTML</p>
+                  </div>
                   <div className="progress-container">
                     <div className="html-progress"></div>
                   </div>
                 </li>
                 <li>
-                  <p>Css</p>
+                  <div>
+                    <i>
+                      <FaSass />
+                    </i>
+                    <p>Sass</p>
+                  </div>
                   <div className="progress-container">
                     <div className="css-progress"></div>
                   </div>
@@ -136,7 +149,6 @@ const About = () => {
                 <li>Figma</li>
                 <li>GitHub</li>
                 <li>Visual Studio Code</li>
-
                 <li>Slack</li>
               </ul>
             </article>

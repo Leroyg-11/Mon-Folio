@@ -186,6 +186,14 @@
       display: flex;
       width: 100%;
       justify-content: space-between;
+      div {
+        display: flex;
+        align-items: baseline;
+        gap: 1.5rem;
+        i {
+          font-size: 3rem;
+        }
+      }
     }
     .progress-container {
       width: 20vw;
