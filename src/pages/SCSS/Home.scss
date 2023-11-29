@@ -1,7 +1,8 @@
 main {
-  * {
+  section {
     animation: apparition 1s ease-in-out;
   }
+
   .home-section {
     display: flex;
     justify-content: space-between;
