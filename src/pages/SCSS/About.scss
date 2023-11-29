@@ -182,7 +182,7 @@
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
+    gap: 1rem;
     li {
       border: 1px solid #fff;
 
@@ -270,6 +270,11 @@
     font-size: 0.7rem;
     i {
       font-size: 1rem;
+    }
+  }
+  .about-tools-container {
+    p {
+      font-size: 0.5rem;
     }
   }
 }
