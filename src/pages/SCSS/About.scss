@@ -168,20 +168,29 @@
   }
 }
 .about-tools-container {
+  h2 {
+    margin-bottom: 2rem;
+  }
   display: flex;
   width: 100%;
   justify-content: center;
   flex-direction: column;
+  font-size: 1.5vw;
+
   ul {
-    list-style: none;
     padding: 0;
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
     li {
       display: flex;
       gap: 1rem;
-      align-items: baseline;
+      align-items: center;
+      flex-direction: column;
+      i {
+        font-size: 2rem;
+      }
     }
   }
 }

@@ -14,6 +14,7 @@ import { LiaNpm } from "react-icons/lia";
 import { FaNodeJs } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaSlack } from "react-icons/fa";
+import { FaTrello } from "react-icons/fa";
 
 const About = () => {
   const windowSize = useWindowSize();
@@ -207,13 +208,19 @@ const About = () => {
                   <i>
                     <SiVisualstudiocode />
                   </i>
-                  <p>Visual Studio Code</p>
+                  <p>VS Code</p>
                 </li>
                 <li>
                   <i>
                     <FaSlack />
                   </i>
                   <p>Slack</p>
+                </li>
+                <li>
+                  <i>
+                    <FaTrello />
+                  </i>
+                  <p>Trello</p>
                 </li>
               </ul>
             </article>
