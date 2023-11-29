@@ -15,6 +15,9 @@ import { FaNodeJs } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaSlack } from "react-icons/fa";
 import { FaTrello } from "react-icons/fa";
+import Figma from "../assets/figma.svg";
+
+import Slack from "../assets/slack.svg";
 
 const About = () => {
   const windowSize = useWindowSize();
@@ -120,7 +123,7 @@ const About = () => {
               <ul>
                 <li>
                   <div>
-                    <i>
+                    <i className="react-icon ">
                       <FaReact />
                     </i>
                     <p>React</p>
@@ -131,7 +134,8 @@ const About = () => {
                 </li>
                 <li>
                   <div>
-                    <i>
+                    <i className="java-icon ">
+                      {" "}
                       <RiJavascriptFill />
                     </i>
                     <p>Javascript</p>
@@ -142,7 +146,8 @@ const About = () => {
                 </li>
                 <li>
                   <div>
-                    <i>
+                    <i className="html-icon ">
+                      {" "}
                       <FaHtml5 />
                     </i>
                     <p>HTML</p>
@@ -153,7 +158,8 @@ const About = () => {
                 </li>
                 <li>
                   <div>
-                    <i>
+                    <i className="sass-icon ">
+                      {" "}
                       <FaSass />
                     </i>
                     <p>Sass</p>
@@ -168,56 +174,56 @@ const About = () => {
               <h2>Outils</h2>
               <ul>
                 <li>
-                  <i>
+                  <i className="mongo-icon ">
                     <SiMongodb />
                   </i>
                   <p>Mongo</p>
                 </li>
                 <li>
                   <i>
-                    <FaFigma />
+                    <img src={Figma} alt="figma-icon" className="figma-icon " />
                   </i>
                   <p>Figma</p>
                 </li>
                 <li>
-                  <i>
+                  <i className="redux-icon ">
                     <SiRedux />
                   </i>
                   <p>Redux</p>
                 </li>
                 <li>
-                  <i>
+                  <i className="node-icon ">
                     <FaNodeJs />
                   </i>
                   <p>Node.js</p>
                 </li>
 
                 <li>
-                  <i>
+                  <i className="npm-icon ">
                     <LiaNpm />
                   </i>
                   <p>Npm</p>
                 </li>
                 <li>
-                  <i>
+                  <i className="git-icon ">
                     <FaGithub />
                   </i>
                   <p>GitHub</p>
                 </li>
                 <li>
-                  <i>
+                  <i className="vscode-icon ">
                     <SiVisualstudiocode />
                   </i>
                   <p>VS Code</p>
                 </li>
                 <li>
                   <i>
-                    <FaSlack />
+                    <img src={Slack} alt="slack-icon" className="slack-icon" />
                   </i>
                   <p>Slack</p>
                 </li>
                 <li>
-                  <i>
+                  <i className="trello-icon ">
                     <FaTrello />
                   </i>
                   <p>Trello</p>
