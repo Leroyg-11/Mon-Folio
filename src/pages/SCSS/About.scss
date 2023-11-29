@@ -167,12 +167,31 @@
     }
   }
 }
+.about-tools-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    li {
+      display: flex;
+      gap: 1rem;
+      align-items: baseline;
+    }
+  }
+}
 
 .about-language-container {
   display: flex;
   width: 100%;
   justify-content: center;
   flex-direction: column;
+
   h2 {
     margin-bottom: 2rem;
   }
@@ -189,7 +208,7 @@
       div {
         display: flex;
         align-items: baseline;
-        gap: 1.5rem;
+        gap: 2vw;
         i {
           font-size: 3rem;
         }
@@ -231,6 +250,14 @@
         animation: progress 1.5s forwards;
         animation-delay: 1.4s;
       }
+    }
+  }
+}
+.mobile {
+  .about-article {
+    font-size: 0.7rem;
+    i {
+      font-size: 1rem;
     }
   }
 }

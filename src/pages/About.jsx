@@ -4,6 +4,16 @@ import "./SCSS/About.scss";
 
 import { FaHtml5 } from "react-icons/fa";
 import { FaSass } from "react-icons/fa";
+import { RiJavascriptFill } from "react-icons/ri";
+import { FaReact } from "react-icons/fa";
+import { FaFigma } from "react-icons/fa";
+import { SiVisualstudiocode } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
+import { SiRedux } from "react-icons/si";
+import { LiaNpm } from "react-icons/lia";
+import { FaNodeJs } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaSlack } from "react-icons/fa";
 
 const About = () => {
   const windowSize = useWindowSize();
@@ -102,19 +112,29 @@ const About = () => {
           </article>
         )}
         {sectionToDisplay === "competences" && (
-          <section className="about-language-container about-article">
-            <article>
+          <section className=" about-article">
+            <article className="about-language-container">
               <h2>Languages</h2>
 
               <ul>
                 <li>
-                  <p>React</p>
+                  <div>
+                    <i>
+                      <FaReact />
+                    </i>
+                    <p>React</p>
+                  </div>
                   <div className="progress-container">
                     <div className="react-progress"></div>
                   </div>
                 </li>
                 <li>
-                  <p>Javascript</p>
+                  <div>
+                    <i>
+                      <RiJavascriptFill />
+                    </i>
+                    <p>Javascript</p>
+                  </div>
                   <div className="progress-container">
                     <div className="java-progress"></div>
                   </div>
@@ -122,7 +142,7 @@ const About = () => {
                 <li>
                   <div>
                     <i>
-                      <FaHtml5 />{" "}
+                      <FaHtml5 />
                     </i>
                     <p>HTML</p>
                   </div>
@@ -143,13 +163,58 @@ const About = () => {
                 </li>
               </ul>
             </article>
-            <article>
+            <article className="about-tools-container ">
               <h2>Outils</h2>
-              <ul className="about-competences-container about-article">
-                <li>Figma</li>
-                <li>GitHub</li>
-                <li>Visual Studio Code</li>
-                <li>Slack</li>
+              <ul>
+                <li>
+                  <i>
+                    <SiMongodb />
+                  </i>
+                  <p>Mongo</p>
+                </li>
+                <li>
+                  <i>
+                    <FaFigma />
+                  </i>
+                  <p>Figma</p>
+                </li>
+                <li>
+                  <i>
+                    <SiRedux />
+                  </i>
+                  <p>Redux</p>
+                </li>
+                <li>
+                  <i>
+                    <FaNodeJs />
+                  </i>
+                  <p>Node.js</p>
+                </li>
+
+                <li>
+                  <i>
+                    <LiaNpm />
+                  </i>
+                  <p>Npm</p>
+                </li>
+                <li>
+                  <i>
+                    <FaGithub />
+                  </i>
+                  <p>GitHub</p>
+                </li>
+                <li>
+                  <i>
+                    <SiVisualstudiocode />
+                  </i>
+                  <p>Visual Studio Code</p>
+                </li>
+                <li>
+                  <i>
+                    <FaSlack />
+                  </i>
+                  <p>Slack</p>
+                </li>
               </ul>
             </article>
           </section>
