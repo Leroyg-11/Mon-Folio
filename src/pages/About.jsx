@@ -99,34 +99,48 @@ const About = () => {
           </article>
         )}
         {sectionToDisplay === "competences" && (
-          <article className="about-competences-container about-article">
-            <ul>
-              <li>
-                <p>React</p>
-                <div className="progress-container">
-                  <div className="react-progress"></div>
-                </div>
-              </li>
-              <li>
-                <p>Javascript</p>
-                <div className="progress-container">
-                  <div className="java-progress"></div>
-                </div>
-              </li>
-              <li>
-                <p>HTML</p>
-                <div className="progress-container">
-                  <div className="html-progress"></div>
-                </div>
-              </li>
-              <li>
-                <p>Css</p>
-                <div className="progress-container">
-                  <div className="css-progress"></div>
-                </div>
-              </li>
-            </ul>
-          </article>
+          <section className="about-language-container about-article">
+            <article>
+              <h2>Languages</h2>
+
+              <ul>
+                <li>
+                  <p>React</p>
+                  <div className="progress-container">
+                    <div className="react-progress"></div>
+                  </div>
+                </li>
+                <li>
+                  <p>Javascript</p>
+                  <div className="progress-container">
+                    <div className="java-progress"></div>
+                  </div>
+                </li>
+                <li>
+                  <p>HTML</p>
+                  <div className="progress-container">
+                    <div className="html-progress"></div>
+                  </div>
+                </li>
+                <li>
+                  <p>Css</p>
+                  <div className="progress-container">
+                    <div className="css-progress"></div>
+                  </div>
+                </li>
+              </ul>
+            </article>
+            <article>
+              <h2>Outils</h2>
+              <ul className="about-competences-container about-article">
+                <li>Figma</li>
+                <li>GitHub</li>
+                <li>Visual Studio Code</li>
+
+                <li>Slack</li>
+              </ul>
+            </article>
+          </section>
         )}
         {sectionToDisplay === "appétence" && (
           <article className="about-appetence-container about-article">
