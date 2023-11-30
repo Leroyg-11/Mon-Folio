@@ -28,9 +28,9 @@ const Projet = () => {
     >
       <h1 className="title">Mes réalisations</h1>
 
-      <section>
+      <section className="carousel-flipp">
         <h2>Projets réalisés durant la formation </h2>
-        <div className="carousel-flipp">
+        <div>
           <CarouselFlipp />
         </div>
       </section>
@@ -38,9 +38,6 @@ const Projet = () => {
       <section className="projet-container">
         {reposWithOneStar.map((repo) => {
           const logoUrl = `https://raw.githubusercontent.com/Leroyg-11/${repo.name}/main/Logo.png`;
-          const slideOne = `https://raw.githubusercontent.com/Leroyg-11/${repo.name}/main/Slide/slide-1.jpeg`;
-          const slideTwo = `https://raw.githubusercontent.com/Leroyg-11/${repo.name}/main/Slide/slide-2.jpeg`;
-          const slideThree = `https://raw.githubusercontent.com/Leroyg-11/${repo.name}/main/Slide/slide-3.jpeg`;
 
           return (
             <CardFlipped
@@ -51,9 +48,6 @@ const Projet = () => {
               topics={repo.topics}
               language={repo.language}
               logoUrl={logoUrl}
-              slideOne={slideOne}
-              slideTwo={slideTwo}
-              slideThree={slideThree}
             />
           );
         })}
