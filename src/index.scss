@@ -20,4 +20,9 @@ main {
   section {
     min-height: 80vh;
   }
+  &.mobile {
+    .title {
+      font-size: 0.8rem !important;
+    }
+  }
 }

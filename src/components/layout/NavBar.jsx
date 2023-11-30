@@ -21,7 +21,7 @@ const NavBar = () => {
         <li>
           <Link className="nav-link-item" to="/Mon-Folio/">
             <button type="button" className="nes-btn is-primary">
-              Home
+              Accueil
             </button>
           </Link>
         </li>
@@ -29,7 +29,7 @@ const NavBar = () => {
         <li>
           <Link className="nav-link-item" to="/Mon-Folio/about">
             <button type="button" className="nes-btn is-primary">
-              About
+              À propos
             </button>
           </Link>
         </li>
