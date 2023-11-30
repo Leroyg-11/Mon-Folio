@@ -1,8 +1,4 @@
 main {
-  section {
-    animation: apparition 1s ease-in-out;
-  }
-
   .home-section {
     display: flex;
     justify-content: space-between;
@@ -106,12 +102,4 @@ main {
   }
 }
 
-@keyframes apparition {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 ///////////////////

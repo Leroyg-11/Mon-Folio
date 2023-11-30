@@ -59,9 +59,9 @@ const Contact = () => {
         windowSize <= 768 ? "mobile" : ""
       }`}
     >
-      {" "}
       <h1 className="title">Contactez moi</h1>
-      <div className="form-container">
+
+      <section className="form-container">
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Nom</label>
           <input
@@ -105,7 +105,7 @@ const Contact = () => {
             Envoyer
           </button>
         </form>
-      </div>
+      </section>
       <PopupContact isOpen={showPopup} onClose={closePopup} />
     </main>
   );

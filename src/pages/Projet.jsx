@@ -28,10 +28,12 @@ const Projet = () => {
     >
       <h1 className="title">Mes réalisations</h1>
 
-      <h2>Projets réalisés durant la formation </h2>
-      <div className="carousel-flipp">
-        <CarouselFlipp />
-      </div>
+      <section>
+        <h2>Projets réalisés durant la formation </h2>
+        <div className="carousel-flipp">
+          <CarouselFlipp />
+        </div>
+      </section>
 
       <section className="projet-container">
         {reposWithOneStar.map((repo) => {
