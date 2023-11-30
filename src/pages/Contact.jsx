@@ -8,6 +8,22 @@ const Contact = () => {
   const windowSize = useWindowSize();
   const [showPopup, setShowPopup] = useState(false);
 
+  const [phoneNumber, setPhoneNumber] = useState("");
+
+  const formatPhoneNumber = (value) => {
+    // Supprime tout sauf les chiffres
+    const cleanedValue = value.replace(/\D/g, "");
+
+    // Met en forme avec des tirets
+    const formattedValue = cleanedValue.replace(
+      /(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})/,
+      "$1.$2.$3.$4.$5"
+    );
+
+    // Met à jour le numéro de téléphone dans l'état
+    setPhoneNumber(formattedValue);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -66,14 +82,17 @@ const Contact = () => {
           />
 
           <label htmlFor="phone">Téléphone</label>
+
           <input
             required
+            maxLength={14}
             className="nes-input is-dark"
             name="user_phone"
-            type="number"
+            type="tel"
             id="phone"
+            value={phoneNumber}
+            onChange={(e) => formatPhoneNumber(e.target.value)}
           />
-
           <label htmlFor="message">Message</label>
           <textarea
             required
