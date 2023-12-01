@@ -6,20 +6,13 @@ import {
 } from "react-ui-cards";
 import "./CardFlipped.scss";
 import CradPopUp from "./CradPopUp";
+import useWindowSize from "../../CustomHook";
 
 const CardFlipped = (repos) => {
-  const [windowSize, setWindowSize] = useState(window.innerWidth);
+  const windowSize = useWindowSize();
+
   const logoUrl = repos.logoUrl;
 
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowSize(window.innerWidth);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
   return (
     <article className={`  ${windowSize <= 768 ? "mobile" : ""}`}>
       <FlippingCard>
@@ -34,7 +27,7 @@ const CardFlipped = (repos) => {
           >
             <div className="front-content">
               <img className="logo" src={logoUrl} alt="" width="80%" />
-              <p className="description ">{repos.description}</p>
+
               <ul className="skills  is-circle">
                 {repos.topics.map((topic, index) => {
                   return (

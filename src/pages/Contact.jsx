@@ -40,6 +40,7 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           setShowPopup(true);
+          setPhoneNumber("");
 
           form.reset();
         },
