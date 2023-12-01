@@ -6,15 +6,16 @@ main {
     overflow: hidden;
     height: max-content;
     .home-left-side {
-      img {
-        display: none;
-      }
+      gap: 3rem;
       width: 50%;
       display: flex;
       margin-left: 2rem;
       flex-direction: column;
       line-height: 3rem;
       justify-content: space-between;
+      img {
+        display: none;
+      }
       .name-size {
         font-size: 1.3rem;
         color: rgb(172, 164, 164);

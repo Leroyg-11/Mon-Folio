@@ -13,7 +13,7 @@ const Error = () => {
       <h1 className="title"> Erreur ! </h1>
       <section>
         <Link className="error-link" to="/Mon-Folio/">
-          <button type="button" className="nes-btn is-success">
+          <button type="button" className="nes-btn is-error">
             Retour a la page d'accueil
           </button>
         </Link>

@@ -164,7 +164,7 @@ const About = () => {
                     </i>
                     <p>Sass</p>
                   </div>
-                  <div className="progress-container">
+                  <div className="progress-container ">
                     <div className="css-progress"></div>
                   </div>
                 </li>
@@ -173,56 +173,56 @@ const About = () => {
             <article className="about-tools-container ">
               <h2>Outils</h2>
               <ul>
-                <li>
-                  <i className="mongo-icon ">
+                <li className="nes-container is-rounded is-dark">
+                  <i className="mongo-icon  ">
                     <SiMongodb />
                   </i>
                   <p>Mongo</p>
                 </li>
-                <li>
+                <li className="nes-container is-rounded is-dark">
                   <i>
                     <img src={Figma} alt="figma-icon" className="figma-icon " />
                   </i>
                   <p>Figma</p>
                 </li>
-                <li>
+                <li className="nes-container is-rounded is-dark">
                   <i className="redux-icon ">
                     <SiRedux />
                   </i>
                   <p>Redux</p>
                 </li>
-                <li>
+                <li className="nes-container is-rounded is-dark">
                   <i className="node-icon ">
                     <FaNodeJs />
                   </i>
                   <p>Node.js</p>
                 </li>
 
-                <li>
+                <li className="nes-container is-rounded is-dark">
                   <i className="npm-icon ">
                     <LiaNpm />
                   </i>
                   <p>Npm</p>
                 </li>
-                <li>
+                <li className="nes-container is-rounded is-dark">
                   <i className="git-icon ">
                     <FaGithub />
                   </i>
                   <p>GitHub</p>
                 </li>
-                <li>
+                <li className="nes-container is-rounded is-dark">
                   <i className="vscode-icon ">
                     <SiVisualstudiocode />
                   </i>
                   <p>VS Code</p>
                 </li>
-                <li>
+                <li className="nes-container is-rounded is-dark">
                   <i>
                     <img src={Slack} alt="slack-icon" className="slack-icon" />
                   </i>
                   <p>Slack</p>
                 </li>
-                <li>
+                <li className="nes-container is-rounded is-dark">
                   <i className="trello-icon ">
                     <FaTrello />
                   </i>
