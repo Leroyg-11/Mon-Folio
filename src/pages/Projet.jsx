@@ -46,7 +46,6 @@ const Projet = () => {
               description={repo.description}
               html_url={repo.html_url}
               topics={repo.topics}
-              language={repo.language}
               logoUrl={logoUrl}
             />
           );

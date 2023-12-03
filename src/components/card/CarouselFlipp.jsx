@@ -7,7 +7,7 @@ import "./CarouselFlipp.scss";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-const CarouselFlipp = (repo) => {
+const CarouselFlipp = () => {
   const [activeSlide, setActiveSlide] = useState(0);
   const [repos, setRepos] = useState([]);
   const getRepos = () => {
@@ -96,7 +96,6 @@ const CarouselFlipp = (repo) => {
                       description={repo.description}
                       html_url={repo.html_url}
                       topics={repo.topics}
-                      language={repo.language}
                       logoUrl={logoUrl}
                     />
                   </div>
