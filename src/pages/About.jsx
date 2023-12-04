@@ -15,7 +15,6 @@ import { FaNodeJs } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaSlack } from "react-icons/fa";
 import { FaTrello } from "react-icons/fa";
-import { FaSlack } from "react-icons/fa";
 
 import Figma from "../assets/figma.svg";
 
