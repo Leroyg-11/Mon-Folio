@@ -24,21 +24,18 @@ Si vous souhaitez cloner ce projet et l'exécuter localement, suivez ces étapes
 
 #### Dépendances utilisées
 
--
--
--
-- "@emailjs
-  "@mageplaza/react-carousel": "^1.0.4",
-  "@trendyol-js/react-carousel": "^3.0.2",
-  "axios": "^1.6.2",
-  "react-dom": "^18.2.0",
-  "react-icons": "^4.12.0",
-  "react-multi-carousel": "^2.8.4",
-  "react-router-dom": "^6.17.0",
-  "react-type-animation": "^3.2.0",
-  "react-ui-cards": "^2.0.0",
-  "reactjs-popup": "^2.0.6",
-  "sass": "^1.69.5"
+- npm install @emailjs
+- npm install @mageplaza/react-carousel
+- npm install @trendyol-js/react-carousel
+- npm install axios
+- npm install react-dom
+- npm install react-icons
+- npm install react-multi-carousel
+- npm install react-router-dom
+- npm install react-type-animation
+- npm install reactjs-popup
+- npm install react-ui-cards
+- npm install sass
 
 ## Contact
 
