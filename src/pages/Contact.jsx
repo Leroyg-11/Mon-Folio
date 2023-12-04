@@ -38,7 +38,6 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
           setShowPopup(true);
           setPhoneNumber("");
 

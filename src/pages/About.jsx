@@ -15,9 +15,12 @@ import { FaNodeJs } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaSlack } from "react-icons/fa";
 import { FaTrello } from "react-icons/fa";
+import { FaSlack } from "react-icons/fa";
+
 import Figma from "../assets/figma.svg";
 
 import Slack from "../assets/slack.svg";
+<FaSlack />;
 
 const About = () => {
   const windowSize = useWindowSize();
